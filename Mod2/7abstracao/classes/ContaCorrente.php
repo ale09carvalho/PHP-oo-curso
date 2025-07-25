@@ -1,7 +1,7 @@
 <?php
 /*
-tem um metodo de mesmo nome, mas com comportamentos diferentes;
-classe com polimorfismo
+* tem um metodo de mesmo nome, mas com comportamentos diferentes;
+* classe com polimorfismo
 */
 class ContaCorrente extends Conta
 {
