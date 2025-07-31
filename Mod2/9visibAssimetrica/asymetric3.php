@@ -6,6 +6,7 @@ class Cidade
     public function __construct(public private(set) string $nome) {
     }   
 }
+
 class Pessoa
 {
     public private(set) string $nome;

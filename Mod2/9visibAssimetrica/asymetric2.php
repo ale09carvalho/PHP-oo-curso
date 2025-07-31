@@ -11,7 +11,9 @@
 class Cidade
 {
     // Assimétrica: leitura pública, escrita privada atribuiçao ja e automatica
-    public function __construct(public private(set) string $nome) {
+    public function __construct(public private(set) string $nome) 
+    {
+        
     }   
 }
 
