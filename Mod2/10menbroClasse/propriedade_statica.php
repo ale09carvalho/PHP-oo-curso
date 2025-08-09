@@ -6,11 +6,13 @@
 class Software
 {
     private $id;
-    private $nome;
+    private $nome; //nao pode acessar a avariavel de fora da classe
+
     //criar atributo propriedade da classe - atributo statico guarda mantem o seu valor entre uma chamada e outra
     // e uma variavel da classe
     // static $contador; // qd nao coloca nada frente da var automaticamente ela sera considerada public
-     public static $contador; // o ideal e colocar public -pode ser que as proximas versoes ixige
+    
+    public static $contador; // o ideal e colocar public -pode ser que as proximas versoes ixige
     // para evitara que mexa na variavel fora coloca-se o privete
     // private static $contador;
 
@@ -20,7 +22,6 @@ class Software
         self::$contador ++;
         $this->id = self::$contador;
         $this->nome = $nome;
-        
     }
 }
 

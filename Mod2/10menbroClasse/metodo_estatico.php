@@ -24,11 +24,13 @@ class Software
     // METODO DA CLASSE
     // ** Se precisar acessa var contador de fora da classe e preciso criar metodo estico
     // qdo cria metodo estatico ele nao precisa de objeto para existir
+    //Metodo estatico
     public static function getContador()
     {
         // acessar a var statica
         // nao pode usar a palavra $this dentro do metodo statico porque nao esta se referindo a um objeto
-        return self::$contador;
+        // metodo statico nao precisa de objeto para existir
+        return self::$contador; // acessar variavel estatica
 
     }
 }
@@ -42,7 +44,7 @@ echo '<pre>';
 print_r($s2);
 
 // ACESSA A VARIAVEL DA CLASSE 
-// forma que pode ser chamado classe :: metodo --> (Software::getContador)
+// forma que pode ser chamado dessa forma --> classe :: metodo --> (Software::getContador)
 var_dump(Software::getContador());
 
 
